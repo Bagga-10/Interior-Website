@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion as _motion } from 'framer-motion';
 import Brand1 from "../../assets/brand/1.png";
 import Brand2 from "../../assets/brand/2.png";
 import Brand3 from "../../assets/brand/3.png";
@@ -11,7 +11,7 @@ const Brands = () => {
     <>
       <div className="container py-14">
         <div className="flex flex-wrap justify-center  lg:justify-between gap-6  ">
-          <motion.img
+          <_motion.img
             
             variants={bounce(1)}
             initial="initial"
@@ -20,7 +20,7 @@ const Brands = () => {
             alt="brand"
             className="w-[110px] md:w-[200px] mix-blend-multiply"
           />
-          <motion.img
+          <_motion.img
             variants={bounce(0.4)}
             initial="initial"
             whileInView={"animate"}
@@ -28,7 +28,7 @@ const Brands = () => {
             alt="brand"
             className="w-[110px] md:w-[200px] mix-blend-multiply"
           />
-          <motion.img
+          <_motion.img
             variants={bounce(0.6)}
             initial="initial"
             whileInView={"animate"}
@@ -36,7 +36,7 @@ const Brands = () => {
             alt="brand"
             className="w-[110px] md:w-[200px] mix-blend-multiply"
           />
-          <motion.img
+          <_motion.img
             variants={bounce(0.8)}
             initial="initial"
             whileInView={"animate"}
@@ -44,7 +44,7 @@ const Brands = () => {
             alt="brand"
             className="w-[110px] md:w-[200px] mix-blend-multiply"
           />
-          <motion.img
+          <_motion.img
             variants={bounce(1.0)}
             initial="initial"
             whileInView={"animate"}

@@ -1,7 +1,8 @@
 import React from "react";
 import Banner1 from "../../assets/banner2.png";
-import { motion } from "framer-motion";
 import { SlideUp } from "../../animation/animate";
+import { motion as _motion } from 'framer-motion';
+
 
 const Banner2 = () => {
   return (
@@ -10,23 +11,23 @@ const Banner2 = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* text section */}
           <div className="space-y-5 flex justify-center flex-col xl:max-w-[500px]">
-            <motion.h1
+            <_motion.h1
               variants={SlideUp(0.2)}
               initial="initial"
               whileInView="animate"
               className="text-4xl font-bold font-serif"
             >
             Tips for Designing a Modern Living Room
-            </motion.h1>
-            <motion.p
+            </_motion.h1>
+            <_motion.p
               variants={SlideUp(0.4)}
               initial="initial"
               whileInView="animate"
               className="text-gray-800 text-sm leading-7"
             >
                 Discover simple design strategies to transform your living room into a stylish and functional space. From choosing the right colors to adding personalized decor, these tips will help you create a space that feels both modern and inviting.{" "}
-            </motion.p>
-            <motion.div
+            </_motion.p>
+            <_motion.div
               variants={SlideUp(0.6)}
               initial="initial"
               whileInView="animate"
@@ -44,21 +45,21 @@ const Banner2 = () => {
                 <p className="text-3xl font-bold font-serif">34</p>
                 <p className="text-gray-800 text-sm">Award Gained</p>
               </div>
-            </motion.div>
+            </_motion.div>
             <div>
-              <motion.button
+              <_motion.button
                 variants={SlideUp(0.6)}
                 initial="initial"
                 whileInView="animate"
                 className="primary-btn bg-black text-white shadow-[5px_5px_0px_0px_#6c6c6c]"
               >
                 Contact Us
-              </motion.button>
+              </_motion.button>
             </div>
           </div>
           {/* image section */}
           <div className="flex flex-col justify-center  ">
-            <motion.img
+            <_motion.img
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}

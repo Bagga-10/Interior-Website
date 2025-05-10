@@ -1,5 +1,5 @@
-import { easeIn } from "framer-motion";
-import { tr, track } from "framer-motion/client";
+// Importing the motion library from framer-motion
+
 
 export const SlideUp = (delay) => {
   return {

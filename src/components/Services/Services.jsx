@@ -2,8 +2,9 @@ import React from "react";
 import { FaVectorSquare } from "react-icons/fa";
 import { FaPenToSquare } from "react-icons/fa6";
 import { BiSolidDollarCircle } from "react-icons/bi";
-import { motion } from "framer-motion";
 import { SlideUp } from "../../animation/animate";
+import { motion as _motion } from 'framer-motion';
+
 
 const ServiceCard = [
   {
@@ -41,15 +42,15 @@ const Services = () => {
       <div className="container py-20">
         {/* heading title */}
         <div className="space-y-2 text-center max-w-[350px] mx-auto mb-8">
-          <motion.h1
+          <_motion.h1
             variants={SlideUp(0.2)}
             initial="initial"
             whileInView={"animate"}
             className="text-3xl font-bold font-serif"
           >
             What we provide
-          </motion.h1>
-          <motion.p
+          </_motion.h1>
+          <_motion.p
             variants={SlideUp(0.4)}
             initial="initial"
             whileInView={"animate"}
@@ -57,13 +58,13 @@ const Services = () => {
           >
             Bring your dream home to life with one-on-one design help & hand
             picked products
-          </motion.p>
+          </_motion.p>
         </div>
         {/* card section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {ServiceCard.map((card) => {
             return (
-              <motion.div
+              <_motion.div
                 variants={SlideUp(card.delay)}
                 initial="initial"
                 whileInView={"animate"}
@@ -81,7 +82,7 @@ const Services = () => {
                 >
                   Learn More
                 </a>
-              </motion.div>
+              </_motion.div>
             );
           })}
         </div>

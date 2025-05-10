@@ -1,5 +1,4 @@
-import React from "react";
-import { delay, motion } from "framer-motion";
+import { motion as _motion } from 'framer-motion';
 import { SlideLeft, SlideUp } from "../../animation/animate";
 
 
@@ -35,15 +34,15 @@ const Testimonial = () => {
     <div className="py-14">
       {/* heading title */}
       <div className="space-y-4 text-center max-w-[550px] mx-auto mb-8">
-        <motion.h1
+        <_motion.h1
           variants={SlideUp(0.2)}
           initial="initial"
           whileInView="animate"
           className="text-4xl font-bold font-serif  "
         >
           Words from our coustomers
-        </motion.h1>
-        <motion.p
+        </_motion.h1>
+        <_motion.p
           variants={SlideUp(0.4)}
           initial="initial"
           whileInView="animate"
@@ -51,7 +50,7 @@ const Testimonial = () => {
         >
           Bring your dream home to life with one-on-one design help & hand
           picked products
-        </motion.p>
+        </_motion.p>
       </div>
       {/* tesitomonial cards */}
     <div className="bg-gradient-to-br from-[#5a5a4f] to-[#0b0a09] p-12">
@@ -59,7 +58,7 @@ const Testimonial = () => {
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-6">
           {TestimonialData.map((card) => {
             return (
-              <motion.div
+              <_motion.div
                 variants={SlideLeft(card.delay)}
                 initial="initial"
                 whileInView="animate"
@@ -89,7 +88,7 @@ const Testimonial = () => {
                     {card.text}
                   </p>
                 </div>
-              </motion.div>
+              </_motion.div>
             );
           })}
         </div>

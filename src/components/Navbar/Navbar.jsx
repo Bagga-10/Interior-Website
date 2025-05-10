@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Logo from "../../assets/logo.png";
-import { motion } from "framer-motion";
+import Logo from "../../assets/Logo.png";
+import { motion as _motion } from 'framer-motion';
+
 
 const NavLinks = [
   {
@@ -27,7 +27,7 @@ const NavLinks = [
 const Navbar = () => {
   return (
     <>
-      <motion.div
+      <_motion.div
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -40,16 +40,17 @@ const Navbar = () => {
         </div>
         {/* Link section */}
         <div className="hidden md:block !space-x-12">
-          {NavLinks.map((link) => {
+          {NavLinks.map((link,index) => {
             return (
-              <motion.a
+              <_motion.a
+              key={index}
                 href={link.link}
                 className="inline-block mx-4 text-lg font-semibold "
                 whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.1 }}
               >
                 {link.title}
-              </motion.a>
+              </_motion.a>
             );
           })}
         </div>
@@ -57,7 +58,7 @@ const Navbar = () => {
         <div>
           <button className="primary-btn ">Chat With Us</button>
         </div>
-      </motion.div>
+      </_motion.div>
     </>
   );
 };

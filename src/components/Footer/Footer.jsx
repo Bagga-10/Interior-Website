@@ -2,12 +2,13 @@ import React from "react";
 import Logo from "../../assets/logo.png";
 import { FaPhone } from "react-icons/fa6";
 import { LuMessageSquare } from "react-icons/lu";
-import { motion } from "framer-motion";
 import { SlideLeft } from "../../animation/animate";
+import { motion as _motion } from 'framer-motion';
+
 
 const Footer = () => {
   return (
-    <motion.footer
+    <_motion.footer
       variants={SlideLeft(0.2)}
       initial="initial"
       whileInView="animate"
@@ -84,7 +85,7 @@ const Footer = () => {
           Created with 💕 by Syed Farhan 🥷
         </p>
       </div>
-    </motion.footer>
+    </_motion.footer>
   );
 };
 
