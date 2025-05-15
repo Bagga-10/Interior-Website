@@ -2,7 +2,11 @@
 
 A sleek, modern, and responsive interior design website built with Vite, React, and modern styling principles. This project showcases elegant UI, minimal design, and smooth UX — tailored for interior design studios, decorators, or personal portfolios.
 
+# 👇 Click for Live Demo
+
 [![Interior Website Preview](https://github.com/user-attachments/assets/1a606695-d700-462a-9c8e-7f2bcba02522)](https://interior-website-nu.vercel.app/)
+
+
 
 
 ---
